@@ -8,23 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E3CF7DD71E3FDA7300E4F26D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CF7DD61E3FDA7300E4F26D /* main.cpp */; };
+		E3CF7DDF1E3FDAB700E4F26D /* kernels.cl in Sources */ = {isa = PBXBuildFile; fileRef = E3CF7DDE1E3FDAB700E4F26D /* kernels.cl */; };
+		E3CF7DE01E3FDAC800E4F26D /* kernels.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3CF7DDE1E3FDAB700E4F26D /* kernels.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E3CF7DD11E3FDA7300E4F26D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				E3CF7DE01E3FDAC800E4F26D /* kernels.cl in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E3CF7DD31E3FDA7300E4F26D /* SoCPassThrough */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SoCPassThrough; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CF7DD61E3FDA7300E4F26D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E3CF7DDD1E3FDAB700E4F26D /* cl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cl.hpp; sourceTree = "<group>"; };
+		E3CF7DDE1E3FDAB700E4F26D /* kernels.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = kernels.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,8 @@
 		E3CF7DD51E3FDA7300E4F26D /* SoCPassThrough */ = {
 			isa = PBXGroup;
 			children = (
+				E3CF7DDD1E3FDAB700E4F26D /* cl.hpp */,
+				E3CF7DDE1E3FDAB700E4F26D /* kernels.cl */,
 				E3CF7DD61E3FDA7300E4F26D /* main.cpp */,
 			);
 			path = SoCPassThrough;
@@ -120,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3CF7DD71E3FDA7300E4F26D /* main.cpp in Sources */,
+				E3CF7DDF1E3FDAB700E4F26D /* kernels.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
